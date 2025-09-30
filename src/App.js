@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Menu, X, ChevronRight, Linkedin, Mail, ExternalLink } from 'lucide-react';
+import { Menu, X, Linkedin, Mail, ExternalLink } from 'lucide-react';
 
 const Portfolio = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
