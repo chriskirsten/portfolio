@@ -262,18 +262,18 @@ const Portfolio = () => {
 
       
           {/* Technical Projects Section */}
-      <section id="projects" className="py-20 bg-white">
+      <section id="projects" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Technical Projects</h2>
             <p className="text-xl text-slate-600 max-w-2xl mx-auto">
-              Interactive demonstrations of cloud infrastructure and cost optimization expertise
+              Interactive demonstrations of AI infrastructure and modern development expertise
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {/* Cloud Cost Optimizer Card */}
-            <div className="bg-slate-50 rounded-2xl p-8 hover:shadow-lg transition border border-slate-200">
+            <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition border border-slate-200">
               <div className="mb-6">
                 <div className="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
                   <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -345,6 +345,80 @@ const Portfolio = () => {
               </div>
             </div>
 
+            {/* Blueprint RAG Assistant Card */}
+            <div className="bg-white rounded-2xl p-8 hover:shadow-lg transition border border-slate-200">
+              <div className="mb-6">
+                <div className="w-16 h-16 bg-teal-100 rounded-xl flex items-center justify-center mb-4">
+                  <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-2">Blueprint RAG Assistant</h3>
+                <p className="text-slate-600 mb-4">
+                  AI-powered system design knowledge assistant built with RAG architecture. Retrieves relevant technical documentation and provides intelligent answers with source citations.
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div>
+                  <div className="text-sm font-medium text-slate-700 mb-2">Key Features</div>
+                  <ul className="space-y-2 text-sm text-slate-600">
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>RAG architecture with OpenAI embeddings</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Pinecone vector database for knowledge retrieval</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <svg className="w-4 h-4 text-teal-600 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                      </svg>
+                      <span>Source citations with similarity scores</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="text-sm font-medium text-slate-700 mb-2">Tech Stack</div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs border border-teal-200">OpenAI</span>
+                    <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs border border-teal-200">Pinecone</span>
+                    <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs border border-teal-200">Netlify Functions</span>
+                    <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs border border-teal-200">React</span>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 pt-4">
+                  <a 
+                    href="https://blueprint-rag.netlify.app" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium transition text-center text-sm flex items-center justify-center gap-2"
+                  >
+                    <ExternalLink size={16} />
+                    Try Demo
+                  </a>
+                  <a 
+                    href="https://github.com/chriskirsten/blueprint-rag" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-white hover:bg-slate-50 text-slate-700 px-4 py-2 rounded-lg font-medium transition text-center text-sm border border-slate-200 flex items-center justify-center gap-2"
+                  >
+                    <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                      <path fillRule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clipRule="evenodd" />
+                    </svg>
+                    View Code
+                  </a>
+                </div>
+              </div>
+            </div>
+
             {/* Placeholder for future projects */}
             <div className="bg-slate-50 rounded-2xl p-8 border border-dashed border-slate-300 flex flex-col items-center justify-center text-center">
               <div className="w-16 h-16 bg-slate-200 rounded-xl flex items-center justify-center mb-4">
@@ -364,7 +438,7 @@ const Portfolio = () => {
       
       
       
-      <section className="py-20 bg-slate-50">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Kind Words from Colleagues</h2>
@@ -373,7 +447,7 @@ const Portfolio = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {testimonials.map((testimonial, idx) => (
-              <div key={idx} className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-slate-200">
+              <div key={idx} className="bg-slate-50 rounded-2xl p-6 shadow-sm hover:shadow-md transition border border-slate-200">
                 <div className="mb-4">
                   <svg className="w-10 h-10 text-teal-500" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
@@ -401,7 +475,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="about" className="py-20 bg-white">
+      <section id="about" className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -483,7 +557,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="blog" className="py-20 bg-slate-50">
+      <section id="blog" className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Writing & Insights</h2>
@@ -491,7 +565,7 @@ const Portfolio = () => {
           </div>
 
           <div className="max-w-3xl mx-auto">
-            <div className="bg-white rounded-2xl p-12 text-center border border-slate-200">
+            <div className="bg-slate-50 rounded-2xl p-12 text-center border border-slate-200">
               <div className="w-16 h-16 bg-teal-100 rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-teal-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
@@ -506,7 +580,7 @@ const Portfolio = () => {
         </div>
       </section>
 
-      <section id="contact" className="py-20 bg-white">
+      <section id="contact" className="py-20 bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">Let's Connect</h2>
@@ -515,7 +589,7 @@ const Portfolio = () => {
             </p>
           </div>
 
-          <div className="bg-slate-50 rounded-2xl p-8 border border-slate-200">
+          <div className="bg-white rounded-2xl p-8 border border-slate-200">
             {formSubmitted ? (
               <div className="text-center py-8">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -604,3 +678,4 @@ const Portfolio = () => {
 };
 
 export default Portfolio;
+
